@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ORANGE FM</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      h1, h2 {
+        color: rgb(227, 147, 64);
+      }
+
+      h3 {
+        color: rgb(54, 124, 102);
+      }
+
+      a {
+        color: rgb(54, 124, 102);
+      }
+
+      section {
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img src="logo.png" alt="Orange" width="300px"/>
+    </h1>
+    <section>
+      <h2 style="font-size: 30px"> Orange FM Manual </h2>
+
+      <h3> Compatibility </h3>
+      Orange FM only works on the DMG (Original), MGB (Pocket), and CGB (Color) models of Game Boy, due to their inclusion of a audio input feature on the cartridge header. Game Boy Advance models WILL NOT work. Neither the FunnyPlaying FPGBC or Analogue Pocket is compatable at this time either.
+
+      <h2> Tuner </h2>
+  
+      <img src="public/tuner.png" width = "320" style="image-rendering: pixelated;"/>
+
+      <ul>
+        <li>Up/Down: Adjust volume</li>
+        <li>Left/Right: Switch presets</li>
+        <li>A: Seek</li>
+        <li>B (Short Tap): Toggle Mute</li>
+        <li>B (Hold): Update signal str while held</li>
+        <li>B (Hold) + Left/Right: Manually tune radio frequency</li>
+        <li>B (Hold) + A: Enter focus mode</li>
+        <li>Select: Toggle preset</li>
+        <li>Start: Switch to Settings</li>
+      </ul>
+
+      <h2> Settings </h2>
+      <p>Show photo of settings with breakdown of icons</p>
+      <ul>
+        <li>Left/Right: Switch page</li>
+        <li>Up/Down: Change selection</li>
+        <li>A: Change setting</li>
+        <li>Start: Switch to Tuner</li>
+      </ul>
+
+      <h2> Antennas </h2>
+
+      <h3> Internal Antenna </h3>
+      <p>
+        Orange FM has a built-in internal antenna that is used when nothing is inserted into the 3.5mm jack. While it is possible to get decent reception of strong signals, you may find that reception is quite positional - you may need to experiment with the Game Boy's orientation to get the best quality signal.
+      </p>
+
+      <h3> External Antennas </h3>
+      <p>
+        For best reception, you'll want to have an external antenna connected. You have many options for external antennas, as the antenna circuit is quite flexible. The general rule - the longer the better (at least up to 1.5 meters). The sleeve (ground) of the jack is connected to the antenna circuit, so you can make your own antennas buy wiring speaker cable or similar to a 3.5" plug. Or you could purchase a 3.5mm aux cable and cut it to length!
+      </p>
+
+
+      <h2> Update Modes </h2>
+
+      <ul>
+        <li>Sig + RDS: Signal strength information will be updated in the background. The station text (RDS) will be synced automatically if data is available. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
+        <li>Sig: Signal strength information will be updated in the background. No station text (RDS) will be synced. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
+        <li>None: No data will be updated in the background. Signal strength can be updated manually by holding B.</li>
+      </ul>
+
+
+      <h2> Focus </h2>
+
+      <p>
+        The "focus" feature allows you to switch to a alternate update mode by pressing B + A. For example, you could have your update mode be "Sig + RDS", and then enter focus mode to temporarilly switch to "None". Or, in reverse, you could have "None" as your default mode, and enter focus to sync RDS if you'd like to get the name of the current song.
+
+        Focus additionally serves as a customizable lock feature, disabling keypad input except for your chosen wake keys. You can even have the display turn off, to save additional power on an original Game Boy display.
+      </p>
+    </section>
+  </body>
+</html>
