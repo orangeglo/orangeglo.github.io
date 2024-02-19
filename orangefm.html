@@ -43,7 +43,7 @@
 
       <h3> Sound Output </h3>
       <p>
-      As mentioned above, this cart use the audio input pin feature of the early Game Boy models, which allows for mono sound to be passed into the Game Boy through the cartridge header. This means you can use the Game Boy speaker to listen to the radio, no headphones required! This is the main difference between the cheap fm radio perhipherals available in the Game Boy's heyday and Orange FM - while those accessories simply used the Game Boy for power, Orange FM actually uses the Game Boy as the audio amplifier, allowing the speaker to be used!
+      As mentioned above, this cart use the audio input pin feature of the early Game Boy models, which allows for mono sound to be passed into the Game Boy through the cartridge header. This means you can use the Game Boy speaker to listen to the radio, no headphones required! This is the main difference between the cheap FM radio perhipherals available in the Game Boy's heyday and Orange FM - while those accessories simply used the Game Boy for power, Orange FM actually uses the Game Boy as the audio amplifier, allowing the speaker to be used!
       </p>
 
       <p>
@@ -52,27 +52,33 @@
 
       <h2> Tuner </h2>
   
-      <img src="public/tuner.png" width = "320" style="image-rendering: pixelated;"/>
+      <div style="display: flex">
+        <img src="public/tuner.png" width = "320" style="image-rendering: pixelated;"/>
+        <div>
+          <ul>
+            <li>Antenna</li>
+            <li>Preset / Info</li>
+            <li>Update Mode</li>
+            <li>RDS Sync</li>
+            <li>Sig Strength</li>
+            <li>Volume</li>
+            <li>Preset Nav OR Fine Tuner</li>
+            <li>RDS Message Area</li>
+          </ul>
+        </div>
+      </div>
 
+      <h3> Controls </h3>
       <ul>
-        <li>Up/Down: Adjust volume</li>
-        <li>Left/Right: Switch presets</li>
-        <li>A: Seek</li>
-        <li>B (Short Tap): Toggle Mute</li>
-        <li>B (Hold): Update signal str while held</li>
-        <li>B (Hold) + Left/Right: Manually tune radio frequency</li>
-        <li>B (Hold) + A: Enter focus mode</li>
-        <li>Select: Toggle preset</li>
-        <li>Start: Switch to Settings</li>
-      </ul>
-
-      <h2> Settings </h2>
-      <p>Show photo of settings with breakdown of icons</p>
-      <ul>
-        <li>Left/Right: Switch page</li>
-        <li>Up/Down: Change selection</li>
-        <li>A: Change setting</li>
-        <li>Start: Switch to Tuner</li>
+        <li><b>Up/Down:</b> Adjust volume</li>
+        <li><b>Left/Right:</b> Switch presets</li>
+        <li><b>A:</b> Seek</li>
+        <li><b>B (Short Tap):</b> Toggle Mute</li>
+        <li><b>B (Hold):</b> Update signal str while held</li>
+        <li><b>B (Hold) + Left/Right:</b> Manually tune radio frequency</li>
+        <li><b>B (Hold) + A:</b> Enter focus mode</li>
+        <li><b>Select:</b> Toggle preset</li>
+        <li><b>Start:</b> Switch to Settings</li>
       </ul>
 
       <h2> Antennas </h2>
@@ -91,9 +97,9 @@
       <h2> Update Modes </h2>
 
       <ul>
-        <li>Sig + RDS: Signal strength information will be updated in the background. The station text (RDS) will be synced automatically if data is available. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
-        <li>Sig: Signal strength information will be updated in the background. No station text (RDS) will be synced. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
-        <li>None: No data will be updated in the background. Signal strength can be updated manually by holding B.</li>
+        <li><b>Sig + RDS:</b> Signal strength information will be updated in the background. The station text (RDS) will be synced automatically if data is available. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
+        <li><b>Sig:</b> Signal strength information will be updated in the background. No station text (RDS) will be synced. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
+        <li><b>None:</b> No data will be updated in the background. Signal strength can be updated manually by holding B.</li>
       </ul>
 
 
@@ -104,6 +110,51 @@
       </p>
       <p>
         Focus additionally serves as a customizable lock feature, disabling keypad input except for your chosen wake keys. You can even have the display turn off, to save additional power on an original Game Boy display.
+      </p>
+
+
+      <h2> Settings </h2>
+      
+      <img src="public/settings.png" width = "320" style="image-rendering: pixelated;"/>
+
+      <h3> Controls </h3>
+      <ul>
+        <li><b>Left/Right:</b> Switch page</li>
+        <li><b>Up/Down:</b> Change selection</li>
+        <li><b>A:</b> Change setting</li>
+        <li><b>Start:</b> Switch to Tuner</li>
+      </ul>
+
+      <h3> Page: General </h3>
+      <ul>
+        <li><b>CGB Pal:</b> Select between one of eight different color palettes for use in a Game Boy Color.</li>
+        <li><b>DMG Pal:</b> Select between a dark or light theme for use on Game Boy and Game Boy Pocket.</li>
+        <li><b>Mute:</b> Pick between a truly silient mute or a quiet mute, where the volume is reduced significantly.</li>
+        <li><b>Focus:</b> Choose whether the display is turned off in focus mode. This is only really useful on non-modified systems, as aftermarket screen kits are unlikely to actually turn off the screen.</li>
+        <li><b>Wake:</b>Select which key(s) leave sleep mode.</li>
+        <li><b>Persist:</b> When this option is on, the last frequency and volume you've been using will be restored when you reboot the system.</li>
+      </ul>
+
+      <h3> Page: Radio </h3>
+      <ul>
+        <li><b>Gain:</b> Select between four different gain levels, which will affect how loud the output is. Depending on the loudness of the broadcasted audio signal, higher gain settings may produce some distortion. This can be a useful setting to get a little more volume from the Game Boy's speaker.</li>
+        <li><b>Hi-Cut:</b> Roll off some high frequency content with a high-pass filter. This can be used to warm up the audio.</li>
+        <li><b>Range:</b> Select the frequency range of the tuner. Most countries use 87.5 - 108. Japan uses 76 - 95. You can also select the full tuning range of 64 - 108 if desired.</li>
+        <li><b>Spacing:</b> Choose between 200 khz (odd only) or 100 khz (odd and even) station spacing for the 87.5 - 108 frequency range. USA uses 200 khz spacing (ex allowing 99.1, 99.3, but not 99.2), while many other countries will use 100 khz spacing to allow for both odd and even frequencies.</li>
+        <li><b>Seek:</b> Adjust the sensitivity of the seek function.</li>
+      </ul>
+
+      <h3> Page: Data Sync </h3>
+      <ul>
+        <li><b>Ext. Ant:</b> Pick the update mode for the external antenna, when not in focus mode. See Update Modes section futher up.</li>
+        <li><b>Int. Ant:</b> Pick the update mode for the internal antenna, when not in focus mode. See Update Modes section futher up.</li>
+        <li><b>E. Focus:</b> Pick the update mode for the external antenna, when focus mode is engaged. See Update Modes section futher up.</li>
+        <li><b>I. Focus:</b> Pick the update mode for the external antenna, when focus mode is engaged. See Update Modes section futher up.</li>
+      </ul>
+
+      <h3> Page: Reset Mem </h3>
+      <p>
+        Press <b>A + B</b> to perform a full reset of the cart. This will clear your presets, and set all settings back to their defaults.
       </p>
     </section>
   </body>
