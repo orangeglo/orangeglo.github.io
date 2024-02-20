@@ -23,6 +23,10 @@
         color: rgb(54, 124, 102);
       }
 
+      ul li {
+        margin-bottom: 0.33rem;
+      }
+
       section {
         margin: 1rem;
         margin-top: 2rem;
@@ -55,15 +59,12 @@
       <div style="display: flex">
         <img src="public/tuner.png" width = "320" style="image-rendering: pixelated;"/>
         <div>
-          <ul>
-            <li>Antenna</li>
-            <li>Preset / Info</li>
-            <li>Update Mode</li>
-            <li>RDS Sync</li>
-            <li>Sig Strength</li>
-            <li>Volume</li>
-            <li>Preset Nav OR Fine Tuner</li>
-            <li>RDS Message Area</li>
+          <ul style="position: absolute;" class="padded-list">
+            <li><img src="public/radio-icons/antenna.png"/> </br> Internal antenna / external antenna</li>
+            <li><img src="public/radio-icons/preset.png"/> </br> Current preset, or other status information</li>
+            <li><img src="public/radio-icons/update_modes.png"/> </br> Update mode: None, Sig, Sig + RDS</li>
+            <li><img src="public/radio-icons/rds.png"/> </br> Lights when RDS is currently syncing</li>
+            <li><img src="public/radio-icons/snr.png"/> </br> Signal strength: Signal-to-noise ratio (db)</li>
           </ul>
         </div>
       </div>
@@ -131,7 +132,7 @@
         <li><b>DMG Pal:</b> Select between a dark or light theme for use on Game Boy and Game Boy Pocket.</li>
         <li><b>Mute:</b> Pick between a truly silient mute or a quiet mute, where the volume is reduced significantly.</li>
         <li><b>Focus:</b> Choose whether the display is turned off in focus mode. This is only really useful on non-modified systems, as aftermarket screen kits are unlikely to actually turn off the screen.</li>
-        <li><b>Wake:</b>Select which key(s) leave sleep mode.</li>
+        <li><b>Wake:</b> Select which key(s) leave sleep mode.</li>
         <li><b>Persist:</b> When this option is on, the last frequency and volume you've been using will be restored when you reboot the system.</li>
       </ul>
 
@@ -156,6 +157,26 @@
       <p>
         Press <b>A + B</b> to perform a full reset of the cart. This will clear your presets, and set all settings back to their defaults.
       </p>
+
+      <h2> Attributions </h2>
+      <ul>
+        <li>
+          Cushion font by Damien Guard (Free with credit)<br/>
+          <a href="https://damieng.com/typography/zx-origins/cushion/">https://damieng.com/typography/zx-origins/cushion/</a>
+        </li>
+        <li>
+          RDSDecoder Arduino library by Radu - Eosif Mihailescu (LGPL v3)<br/>
+          <a href="https://github.com/csdexter/RDSDecoder">https://github.com/csdexter/RDSDecoder</a>
+        </li>
+        <li>
+          Smooth Arduino library by ripred (MIT) <br/>
+          <a href="https://github.com/ripred/Smooth">https://github.com/ripred/Smooth</a>
+        </li>
+        <li>
+          kicad-gamepaks by djeddit (CC-BY-4.0) <br/>
+          <a href="https://github.com/djedditt/kicad-gamepaks">https://github.com/djedditt/kicad-gamepaks</a>
+        </li>
+      </ul>
     </section>
   </body>
 </html>
