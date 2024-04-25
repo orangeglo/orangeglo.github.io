@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ORANGE FM</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <style>
+      html {
+        font-family: sans-serif;
+        max-width: 600px;
+      }
+
+      h1, h2 {
+        color: rgb(227, 147, 64);
+      }
+
+      h3 {
+        color: rgb(54, 124, 102);
+      }
+
+      a {
+        color: rgb(54, 124, 102);
+      }
+
+      a.big-link {
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin-top: 2rem;
+      }
+
+      section {
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+
+      table {
+        width: 800px;
+      }
+
+      table td:first-child {
+        font-weight: bold
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img src="/logo.png" alt="Orange" width="300px"/>
+    </h1>
+    <section>
+      <p>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/enUvqCJ0hNE?si=UFEjGnY11r9nvENO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </p>
+
+      <p>
+        <h2> What is Orange FM? </h2>
+        Orange FM is a modern cartridge for the Game Boy family of handhelds. It is currently under development, and it not yet released to the public.
+
+        In the future, I hope to have it available for purchase as an assembled unit, or as a DIY project for advanced hobbyists.
+
+        <h3> Features </h3>
+        <ul style="font-weight: bold;">
+          <li>World Band 64-108Mhz FM Radio</li>
+          <li>Uses the Game Boy's Speaker (See compatibility chart)</li>
+          <li>On-Cart Headphone Amp (Optional)</li>
+          <li>Store and Recall 12 Presets</li>
+          <li>RDS Radio Text Support</li>
+          <li>Internal and External Antenna Support</li>
+          <li>Digital Volume Adjustment</li>
+        </ul>
+
+        <h2> Compatibility </h2>
+        <table>
+          <thead>
+            <tr><th></th><th style="width: 250px">Mono Audio Output Through Console Speaker</th><th style="width: 250px">Stereo Audio Through Optional On-Cart Headphone Amp</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Original Game Boy (DMG)</td><td>Yes*</td><td>Yes</td></tr>
+            <tr><td>Game Boy Pocket (MGB)</td><td>Yes**</td><td>Yes</td></tr>
+            <tr><td>Game Boy Light (MGL)</td><td>Yes**</td><td>Yes</td></tr>
+            <tr><td>Game Boy Color (CGB)</td><td>Yes***</td><td>Yes</td></tr>
+            <tr><td>Game Boy Advance (AGB)</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Game Boy Advance SP (AGS)</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Game Boy Micro (OXY)</td><td>No</td><td>No</td></tr>
+            <tr><td>Super Game Boy</td><td>Yes (Through TV)</td><td>Yes</td></tr>
+            <tr><td>Game Boy Player</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Analogue Pocket</td><td>No****</td><td>Yes</td></tr>
+            <tr><td>FunnyPlaying GBC</td><td>No</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+<br/><br/>
+        * Low volume, but great sound<br/>
+        ** Medium volume, decent sound<br/>
+        *** Highest volume, decent sound<br/>
+        **** A future firmware update from Analogue could add speaker output<br/>
+      </p>
+
+      <p>
+        <h2> FAQ </h2>
+        <h3>How much would an assembled Orange FM cartridge cost?</h3>
+        <p>I'm not able to answer exactly at this time - a lot will come down to cost of production. These are dense, complicated circuit boards compared to your average Game Boy flash cartridge.<p>
+
+        <h3>How hard would assembling my own cart be?</h3>
+        <p>Building your own Orange FM cart will require experience with fine-pitch SMD soldering. Additionaly, there is one QFN package chip you'll need to solder with hot air, hot plate, etc. So this is not a soldering project for beginners!</p>
+
+        <h3>Will Orange FM work in my country?</h3>
+        <p>Probably. Orange FM supports 87.5 - 108 MHz for most of the world, and 76 - 95 MHz for Japan. There is also a full range mode that will give you 64 - 108 Mhz. You can choose between 200 kHz (e.g. 88.5, 88.7, 88.9, etc) and 100 kHz (e.g. 88.5, 88.6, 88.7, etc) spacing options.
+        <br/><br/>
+        Italy may use 50 kHz spacing (e.g. 88.75) for some stations - unfortunately Orange FM can't tune to these stations at present.
+        </p>
+
+        <h3>Can you support AM / DAB / HD Radio / Weather?</h3>
+        <p>Not happening for Orange FM, as I've already commited to the current radio chipset I'm using.</p>
+
+        <h3>Could you make a GBA-sized version?</h3>
+        <p>In a standard GBA-cart shell - no. Similar to Boktai or other "larger" GBA games - maybe. But don't expect one!</p>
+
+      </p>
+
+      <p>
+        <h2> Manual </h2>
+        <a href="/orangefm/manual_v03.html">Manual (Version 0.3)</a>
+      </p>
+    </section>
+  </body>
+</html>
