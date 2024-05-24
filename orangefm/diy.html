@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ORANGE FM - D.I.Y.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <style>
+      html {
+        font-family: sans-serif;
+        max-width: 600px;
+      }
+
+      h1, h2 {
+        color: rgb(227, 147, 64);
+      }
+
+      h3 {
+        color: rgb(54, 124, 102);
+      }
+
+      a {
+        color: rgb(54, 124, 102);
+      }
+
+      ul li {
+        margin-bottom: 0.33rem;
+      }
+
+      section {
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img src="/logo.png" alt="Orange" width="300px"/>
+    </h1>
+    <section>
+      <h2 style="font-size: 30px"> Orange FM - ROM Manual <small>Version 0.4</small></h2>
+
+      <h3> Recommended Workflow </h3>
+      <ol>
+        <li>Solder the atmega328pb, it's two decoupling cap, the crystal, and it's two supporting caps. </li>
+        <li>Set the fuses on the atmega328pb, then flash the firmware. Make sure your programmer verifies the code was written correctly. </li>
+        <li>Solder the flash memory chip, and it's decoupling cap</li>
+        <li>Flash the Orange FM ROM to the cart with GBxCart or a similar cart writer.</li>
+        <li><b>Checkpoint</b> - At this point the cart should boot. Confirm the cart boots - the startup will get stuck at "BOOTING COMM", this is expected. </li>
+        <li>Solder the digital logic section between the atmega and the flash chip, including supporting caps and resistors.</li>
+        <li><b>Checkpoint</b> - Now try the cart again - it should now fully boot up into the radio display, and the current station will be shown as 143.3 (or a similar nonsense station). This means the ROM and atmega are successfully talking to each other from the digital logic section!</li>
+        <li>Next, solder the middle communications section, the radio section, and the output section.</li>
+        <li><b>Checkpoint</b> - The cart should now be fully functional!</li>
+        <li>Finally, solder the headphone amp section, and set the HP AMP solder jumper.</li>
+      </ol>
+    </section>
+  </body>
+</html>
