@@ -15,7 +15,7 @@
         color: rgb(227, 147, 64);
       }
 
-      h3 {
+      h3, h4 {
         color: rgb(54, 124, 102);
       }
 
@@ -46,18 +46,24 @@
         <li><a href="https://www.digikey.com/en/mylists/list/DJZF1H27DH">DigiKey Parts List</a></li>
       </ul>
 
+      <h4> Section Breakdown </h4>
+      <a href="/public/orangefm-diy/orange-fm-breakdown-2024-05-01.jpg"><img src="/public/orangefm-diy/orange-fm-breakdown-2024-05-01.jpg" width="600"/></a>
+
       <h3> Recommended Workflow </h3>
       <ol>
-        <li>Solder the atmega328pb, it's two decoupling cap, the crystal, and it's two supporting caps. </li>
+        <li>Solder the atmega328pb, it's two decoupling cap, the crystal, and it's two supporting caps (<b>1</b>). </li>
         <li>Set the fuses on the atmega328pb, then flash the firmware. Make sure your programmer verifies the code was written correctly. </li>
-        <li>Solder the flash memory chip, and it's decoupling cap</li>
+        <li>Solder the flash memory chip, and it's decoupling cap (<b>2</b>).</li>
         <li>Flash the Orange FM ROM to the cart with GBxCart or a similar cart writer.</li>
         <li><b>Checkpoint</b> - At this point the cart should boot. Confirm the cart boots - the startup will get stuck at "BOOTING COMM", this is expected. </li>
-        <li>Solder the digital logic section between the atmega and the flash chip, including supporting caps and resistors.</li>
+        <li>Solder the digital logic section between the atmega and the flash chip, including supporting caps and resistors (<b>3</b>). </li>
         <li><b>Checkpoint</b> - Now try the cart again - it should now fully boot up into the radio display, and the current station will be shown as 143.3 (or a similar nonsense station). This means the ROM and atmega are successfully talking to each other from the digital logic section!</li>
-        <li>Next, solder the middle communications section, the radio section, and the output section.</li>
-        <li><b>Checkpoint</b> - The cart should now be fully functional!</li>
-        <li>Finally, solder the headphone amp section, and set the HP AMP solder jumper.</li>
+        <li>Next, solder the middle radio section and support circuitry (<b>4</b>).</li>
+        <li><b>Checkpoint</b> - The cart should now be able to talk to the radio chip, and should be able to tune to stations. You should see valid stations showing up. Try seeking with "A" to confirm functionality. At this point, there will be no sound output.</li>
+        <li>Solder the cart output section (<b>5</b>). </li>
+        <li><b>Checkpoint</b> - The cart should now have audio output through the Game Boy on systems that support it!</li>
+        <li>Finally, solder the headphone amp section (<b>6</b>), and set the HP AMP solder jumper.</li>
+        <li><b>Checkpoint</b> - The cart should now have headphone amp output! Press "B + Start" to turn on the amp.</li>
       </ol>
     </section>
   </body>
