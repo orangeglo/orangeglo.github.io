@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORANGE FM</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -43,6 +44,12 @@
       table td:first-child {
         font-weight: bold
       }
+
+      .youtube-video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        max-width: 800px;
+      }
     </style>
   </head>
   <body>
@@ -51,7 +58,7 @@
     </h1>
     <section>
       <p>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/enUvqCJ0hNE?si=UFEjGnY11r9nvENO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/enUvqCJ0hNE?si=UFEjGnY11r9nvENO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </p>
 
       <p>
@@ -64,37 +71,36 @@
         <ul style="font-weight: bold;">
           <li>World Band 64-108Mhz FM Radio</li>
           <li>Uses the Game Boy's Speaker (See compatibility chart)</li>
-          <li>On-Cart Headphone Amp (Optional)</li>
+          <li>On-Cart Stereo Headphone Amp</li>
           <li>Store and Recall 12 Presets</li>
           <li>RDS Radio Text Support</li>
           <li>Internal and External Antenna Support</li>
           <li>Digital Volume Adjustment</li>
+          <li>Many Configurable Options, (<a href="manual.html">See Manual</a>)</li>
         </ul>
 
         <h2> Compatibility </h2>
         <table>
           <thead>
-            <tr><th></th><th style="width: 250px">Mono Audio Output Through Console Speaker</th><th style="width: 250px">Stereo Audio Through Optional On-Cart Headphone Amp</th></tr>
+            <tr><th></th><th style="width: 250px">Mono Audio Output Through Console Speaker</th><th style="width: 250px">Stereo Audio Through On-Cart Headphone Amp</th></tr>
           </thead>
           <tbody>
             <tr><td>Original Game Boy (DMG)</td><td>Yes*</td><td>Yes</td></tr>
-            <tr><td>Game Boy Pocket (MGB)</td><td>Yes**</td><td>Yes</td></tr>
-            <tr><td>Game Boy Light (MGL)</td><td>Yes**</td><td>Yes</td></tr>
-            <tr><td>Game Boy Color (CGB)</td><td>Yes***</td><td>Yes</td></tr>
+            <tr><td>Game Boy Pocket (MGB)</td><td>Yes*</td><td>Yes</td></tr>
+            <tr><td>Game Boy Light (MGL)</td><td>Yes*</td><td>Yes</td></tr>
+            <tr><td>Game Boy Color (CGB)</td><td>Yes**</td><td>Yes</td></tr>
             <tr><td>Game Boy Advance (AGB)</td><td>No</td><td>Yes</td></tr>
             <tr><td>Game Boy Advance SP (AGS)</td><td>No</td><td>Yes</td></tr>
-            <tr><td>Game Boy Micro (OXY)</td><td>No</td><td>No</td></tr>
             <tr><td>Super Game Boy</td><td>Yes (Through TV)</td><td>Yes</td></tr>
             <tr><td>Game Boy Player</td><td>No</td><td>Yes</td></tr>
-            <tr><td>Analogue Pocket</td><td>No****</td><td>Yes</td></tr>
+            <tr><td>Analogue Pocket</td><td>No***</td><td>Yes</td></tr>
             <tr><td>FunnyPlaying GBC</td><td>No</td><td>Yes</td></tr>
           </tbody>
         </table>
 <br/><br/>
-        * Low volume, but great sound<br/>
-        ** Medium volume, decent sound<br/>
-        *** Highest volume, decent sound<br/>
-        **** A future firmware update from Analogue could add speaker output<br/>
+        * Quiet volume<br/>
+        ** Loud volume<br/>
+        *** A future firmware update from Analogue may add speaker output<br/>
       </p>
 
       <p>
