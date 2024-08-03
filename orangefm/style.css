@@ -1,0 +1,62 @@
+html {
+  font-family: sans-serif;
+  max-width: 600px;
+}
+
+h2 {
+  margin-top: 4rem;
+}
+
+h1, h2 {
+  color: rgb(227, 147, 64);
+}
+
+h3 {
+  color: rgb(54, 124, 102);
+}
+
+a {
+  color: rgb(54, 124, 102);
+}
+
+a.big-link {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+section {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+table {
+  width: 800px;
+}
+
+table td:first-child {
+  font-weight: bold
+}
+
+ul li {
+  margin-bottom: 0.33rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  width: 800px;
+}
+
+nav .selected {
+  color: rgb(227, 147, 64);
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+}

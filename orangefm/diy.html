@@ -2,52 +2,36 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>ORANGE FM - D.I.Y.</title>
+    <title>Orange FM - DIY</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
     <style>
-      html {
-        font-family: sans-serif;
-        max-width: 600px;
-      }
-
-      h1, h2 {
-        color: rgb(227, 147, 64);
-      }
-
-      h3, h4 {
-        color: rgb(54, 124, 102);
-      }
-
-      a {
-        color: rgb(54, 124, 102);
-      }
-
-      ul li {
-        margin-bottom: 0.33rem;
-      }
-
+      h3 { margin-top: 4rem }
       ol li {
         margin-bottom: 0.66rem;
       }
-
-      section {
-        margin: 1rem;
-        margin-top: 2rem;
-      }
     </style>
   </head>
-  <body>
+  <body>    
     <h1>
       <img src="/logo.png" alt="Orange" width="300px"/>
     </h1>
     <section>
-      <h2 style="font-size: 30px"> Orange FM - D.I.Y.</h2>
+      <nav>
+        <a href='/orangefm'>Home</a> |
+        <span class='selected'>DIY</span> |
+        <a href="manual.html">Manual</a> |
+        <a href="downloads.html">Downloads</a>
+      </nav>
 
-      <h3> PCB Revision 2024-06-14 </h3>
-      <ul>
+      <h2 style="font-size: 30px;"> Orange FM - DIY</h2>
+
+      <h3 style='margin-top:0'> PCB Revision 2024-06-14 </h3>
+      <ul style='margin-bottom: 4rem'>
         <li><a href="/public/orangefm-diy/orange-fm-bom-2024-06-14.pdf">Bill of Materials</a></li>
         <li><a href="https://www.digikey.com/en/mylists/list/9FSYFETJQG">DigiKey Parts List</a></li>
+        <li><a href="downloads.html">Downloads (ROM, Label, etc)</a></li>
       </ul>
 
       <a href="/public/orangefm-diy/orange-fm-breakdown-2024-06-14.jpg"><img src="/public/orangefm-diy/orange-fm-breakdown-2024-06-14.jpg" width="600"/></a>
@@ -59,7 +43,7 @@
       <ol>
         <li>Verify the MCU is functioning correctly (<b>1</b>). When powered up in a Game Boy, the LED on the board should flash in a 1 second interval.</li>
         <li>Solder the flash memory chip, and it's decoupling cap (<b>2</b>).</li>
-        <li>Flash the Orange FM ROM to the cart with GBxCart or a similar cart writer.</li>
+        <li>Flash the Orange FM ROM to the cart with GBxCart or a similar cart writer. You can find the latest ROM in <a href="downloads.html"> Downloads</a></li>
         <li><b>Checkpoint</b> - At this point the cart should boot. Confirm the cart boots - the startup will get stuck at "BOOTING COMM", this is expected. </li>
         <li>Solder the digital logic section between the MCU and the flash chip, including supporting caps and resistors (<b>3</b>). </li>
         <li><b>Checkpoint</b> - Now try the cart again - it should now fully boot up into the radio display, and the current station will be shown as 143.3 (or a similar nonsense station). This means the ROM and MCU are successfully talking to each other from the digital logic section!</li>

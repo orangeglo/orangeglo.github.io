@@ -3,69 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORANGE FM</title>
+    <title>Orange FM - Game Boy Radio Cart</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <style>
-      html {
-        font-family: sans-serif;
-        max-width: 600px;
-      }
-
-      h1, h2 {
-        color: rgb(227, 147, 64);
-      }
-
-      h3 {
-        color: rgb(54, 124, 102);
-      }
-
-      a {
-        color: rgb(54, 124, 102);
-      }
-
-      a.big-link {
-        font-size: 1.5rem;
-      }
-
-      p {
-        margin-top: 2rem;
-      }
-
-      section {
-        margin: 1rem;
-        margin-top: 2rem;
-      }
-
-      table {
-        width: 800px;
-      }
-
-      table td:first-child {
-        font-weight: bold
-      }
-
-      .youtube-video {
-        aspect-ratio: 16 / 9;
-        width: 100%;
-        max-width: 800px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>
-      <img src="/logo.png" alt="Orange" width="300px"/>
+      <a href="/orangefm"><img src="/logo.png" alt="Orange" width="300px"/></a>
     </h1>
     <section>
+      <nav>
+        <span class='selected'>Home</span> |
+        <a href="diy.html">DIY</a> |
+        <a href="manual.html">Manual</a> |
+        <a href="downloads.html">Downloads</a>
+      </nav>
+
       <p>
         <iframe class="youtube-video" src="https://www.youtube.com/embed/enUvqCJ0hNE?si=UFEjGnY11r9nvENO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </p>
 
       <p>
         <h2> What is Orange FM? </h2>
-        Orange FM is a modern cartridge for the Game Boy family of handhelds. It is currently under development, and it not yet released to the public.
+        Orange FM is a modern cartridge for the Game Boy family of handhelds. You can think of it as a car stereo system in a cartridge, featuring digital tuning, presets, basic radio text support, and other fun features!
 
-        In the future, I hope to have it available for purchase as an assembled unit, or as a DIY project for advanced hobbyists.
+        <br/><br/>
+        Currently, it is available as a DIY project for advanced hobbyists. In the future a fully assembled cartridge may be available.
 
         <h3> Features </h3>
         <ul style="font-weight: bold;">
@@ -105,13 +69,15 @@
 
       <p>
         <h2> FAQ </h2>
-        <h3>How much would an assembled Orange FM cartridge cost?</h3>
-        <p>I'm not able to answer exactly at this time - a lot will come down to cost of production. These are dense, complicated circuit boards compared to your average Game Boy flash cartridge.<p>
+
+        <h3>How does the speaker output work?</h3>
+        <p>All Game Boy models until the GBA have an audio input capability on the cartridge connector. This makes it fairly easy to send mono audio into the Game Boy, where it is mixed with the internal sound hardware. The input volume depends on the model, with the Game Boy Color performing the best. 
+
+          <br/><br/>This feature was never officially (to my knowledge) used by Nintendo, although some other projects like the <a href="https://nanoloop.com/mono/index.html">Nanoloop Mono</a> make use of it.
+        <p>
 
         <h3>How hard would assembling my own cart be?</h3>
-        <p>Building your own Orange FM cart from scratch will require experience with fine-pitch SMD soldering. Additionally, there is one QFN package chip you'll need to solder with hot air, hot plate, etc. So this is not a soldering project for beginners!
-        <br/><br/>
-        It is possible I will be able to make a partially-assembled version available that has the more difficult soldering already complete.
+        <p>Building your own Orange FM cart from scratch requires experience with fine-pitch SMD soldering. Additionally, there is one QFN package chip you'll need to solder with hot air, hot plate, etc. So this is not a soldering project for beginners!
         </p>
 
         <h3>What is the situation with the antenna / reception?</h3>
@@ -124,7 +90,7 @@
         </p>
 
         <h3>Will Orange FM work in my country?</h3>
-        <p>Probably. Orange FM supports 87.5 - 108 MHz for most of the world, and 76 - 95 MHz for Japan. There is also a full range mode that will give you 64 - 108 Mhz. You can choose between 200 kHz (e.g. 88.5, 88.7, 88.9, etc) and 100 kHz (e.g. 88.5, 88.6, 88.7, etc) spacing options.
+        <p>Probably. Orange FM supports 87.5 - 108 MHz for most of the world, and 76 - 95 MHz for Japan. There is also a full range mode that will give you 64 - 108 Mhz. You can choose between 200 kHz (e.g. 88.5, 88.7, 88.9, etc) and 100 kHz (e.g. 88.5, 88.6, 88.7, etc) spacing options. You can also select the de-emphasis (50us or 75us) which varies depending on where in the world you are.
         <br/><br/>
         Italy may use 50 kHz spacing (e.g. 88.75) for some stations - unfortunately Orange FM can't tune to these stations at present.
         </p>
@@ -138,9 +104,12 @@
       </p>
 
       <p>
-        <h2> Manuals </h2>
-        <a href="/orangefm/manual_v04.html">ROM Manual (Version 0.4)</a><br/>
-        <a href="/orangefm/manual_v03.html">ROM Manual (Version 0.3)</a>
+        <h2> All Manuals </h2>
+        <ul>
+          <li><a href="/orangefm/manual_v10.html">ROM Manual (Latest - Version 1.0)</a></li>
+          <li><a href="/orangefm/manual_v04.html">ROM Manual (Version 0.4)</a></li>
+          <li><a href="/orangefm/manual_v03.html">ROM Manual (Version 0.3)</a></li>
+        </ul>
       </p>
     </section>
   </body>
