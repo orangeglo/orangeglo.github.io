@@ -1,0 +1,8 @@
+Orange FM ROM v1.1 Changelog
+
+- Custom palette editor
+- Silent mute disables audio system
+- B goes back in settings
+- Mute headphone output during memory reset
+- Move memory reset to last page
+- Add note about "original screens only" to lock screen display off description
