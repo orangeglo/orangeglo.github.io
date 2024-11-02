@@ -1,0 +1,11 @@
+Orange FM ROM v1.2 Changelog
+
+- New: Limited support for pre-release firmware 0.4
+	- Custom theme support not implemented
+	- LED setting disabled
+	- Otherwise all other features/fixes should be working
+- New: Nicer error if MCU never responds to the boot sequence
+- New: Show ROM and FW versions during bootup
+- Bugfix: Booting the cart with auto-amp on, and headphones inserted, could result in a burst of audio through the system speakers. This has been fixed.
+- Bugfix: Fix a graphical glitch that could occur when changing frequency range or spacing
+- Bugfix: Changing the frequency spacing no longer seeks if it's not needed
