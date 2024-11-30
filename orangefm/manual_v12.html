@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Orange FM - ROM Manual Version 1.2</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      h3 { margin-top: 2rem }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img src="/logo.png" alt="Orange" width="300px"/>
+    </h1>
+    <section>
+      <nav>
+        <a href='/orangefm'>Home</a> |
+        <a href='diy.html'>DIY</a> |
+        <span class='selected'>Manual</span> |
+        <a href="downloads.html">Downloads</a>
+      </nav>
+      <h2 style="font-size: 30px"> Orange FM - ROM Manual <small>Version 1.2</small></h2>
+
+      <h3> Features </h3>
+      <ul style="font-weight: bold;">
+        <li>World Band 64-108Mhz FM Radio</li>
+        <li>Uses the Game Boy's Speaker (<a href="#chart">See compatibility chart</a>)</li>
+        <li>On-Cart Stereo Headphone Amp</li>
+        <li>Store and Recall 12 Presets</li>
+        <li>RDS Radio Text Support</li>
+        <li>Internal and External Antenna Support</li>
+        <li>Digital Volume Adjustment</li>
+        <li>Many Configurable Options</li>
+      </ul>
+
+      <h3> Compatibility </h3>
+      <p>
+        <table id="chart">
+          <thead>
+            <tr><th></th><th style="width: 250px">Mono Audio Output Through Console Speaker</th><th style="width: 250px">Stereo Audio Through On-Cart Headphone Amp</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Original Game Boy (DMG)</td><td>Yes*</td><td>Yes</td></tr>
+            <tr><td>Game Boy Pocket (MGB)</td><td>Yes*</td><td>Yes</td></tr>
+            <tr><td>Game Boy Light (MGL)</td><td>Yes*</td><td>Yes</td></tr>
+            <tr><td>Game Boy Color (CGB)</td><td>Yes**</td><td>Yes</td></tr>
+            <tr><td>Game Boy Advance (AGB)</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Game Boy Advance SP (AGS)</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Super Game Boy</td><td>Yes (Through TV)</td><td>Yes</td></tr>
+            <tr><td>Game Boy Player</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Analogue Pocket</td><td>Yes***</td><td>Yes</td></tr>
+            <tr><td>FunnyPlaying GBC</td><td>No</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+        <br/><br/>
+        * Quiet volume<br/>
+        ** Loud volume<br/>
+        *** As of Firmware 2.3<br/>
+      </p>
+
+      <h3> Analogue Pocket </h3>
+      <p>
+      As of Pocket Firmware 2.3, the Analogue Pocket supports speaker output for Orange FM! To use Orange FM on the Pocket, you'll want to set the Gain in the Radio Settings to "Analogue". The Pocket requires less output volume from the cart, so without this setting engaged, the output will be very distorted. With "Analogue" selected, the sound output will be excellent. The Analogue Pocket makes a really great portable radio, with loud speaker output!
+      </p>
+
+      <h3> Sound Output </h3>
+      <p>
+      Orange FM use the audio input pin feature of the early Game Boy models, which allows for mono sound to be passed into the Game Boy through the cartridge header. This means you can use the Game Boy speaker to listen to the radio, no headphones required! This is the main difference between the cheap FM radio perhipherals available in the Game Boy's heyday and Orange FM - while those accessories simply used the Game Boy for power, Orange FM actually uses the Game Boy as the audio amplifier, allowing the speaker to be used!
+      </p>
+
+      <p>
+      The cart outputs high quality, but mono, sound to the Game Boy. Each Game Boy will have it's own quirks with the audio amp, depending both on the model (DMG, MGB, CGB), but also on the individual unit. A general rule - the better and less noisy the headphone output is while playing a game, the better and less noisy Orange FM will sound. It's fun to experiment with different Game Boy's and find the one with the sound you prefer.
+      </p>
+
+      <p>
+      Orange FM also includes a headphone amplifier as part of the cart's 3.5mm jack. With a pair of headphones plugged into the 3.5mm jack, not only will you get improved reception, but you'll also get stereo sound (with adequate signal strength)! The feature enables Orange FM to be used on Game Boy Advance models (except the Micro of course), as well as the FunnyPlaying GBC and the Analogue Pocket.
+      </p>
+
+      <h2> Tuner </h2>
+  
+      <div style="display: flex">
+        <img src="/public/tuner.png" width = "320" style="image-rendering: pixelated;"/>
+        <div>
+          <ul style="position: absolute;" class="padded-list">
+            <li><img src="/public/radio-icons/antenna.png"/> </br> Internal antenna / external antenna</li>
+            <li><img src="/public/radio-icons/headphones.png"/> </br> Headphone amp engaged</li>
+            <li><img src="/public/radio-icons/preset.png"/> </br> Current preset, or other status information</li>
+            <li><img src="/public/radio-icons/update_modes.png"/> </br> Update mode: Off, Sig, Sig + RDS</li>
+            <li><img src="/public/radio-icons/rds.png"/> </br> Lights when RDS is currently syncing</li>
+            <li><img src="/public/radio-icons/snr.png"/> </br> Signal strength: Signal-to-noise ratio (db)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3> Controls </h3>
+      <ul>
+        <li><b>Up/Down:</b> Adjust volume</li>
+        <li><b>Left/Right:</b> Switch presets</li>
+        <li><b>A:</b> Seek</li>
+        <li><b>B (Short Tap):</b> Toggle Mute</li>
+        <li><b>B (Hold):</b> Manually sync data </li>
+        <li><b>B (Hold) + Left/Right:</b> Manually tune radio frequency</li>
+        <li><b>B (Hold) + A:</b> Enter lock mode</li>
+        <li><b>B (Hold) + Select:</b> Toggle headphone amp</li>
+        <li><b>Select:</b> Toggle preset</li>
+        <li><b>Start:</b> Switch to Settings</li>
+      </ul>
+
+      <h2> Antennas </h2>
+
+      <h3> Internal Antenna </h3>
+      <p>
+        Orange FM has a built-in internal antenna that is used when nothing is inserted into the 3.5mm jack. While it is possible to get decent reception of strong signals, you may find that reception is quite positional - you may need to experiment with the Game Boy's orientation to get the best quality signal.
+      </p>
+
+      <h3> External Antennas </h3>
+      <p>
+        For best reception, you'll want to have an external antenna connected. You have many options for external antennas, as the antenna circuit is quite flexible. The general rule - the longer the better (at least up to 1.5 meters). The sleeve (ground) of the jack is connected to the antenna circuit, so you can make your own antennas buy wiring speaker cable or similar to a 3.5mm plug. Or you could purchase a 3.5mm aux cable and cut it to length!
+      </p>
+
+
+      <h2> Update Modes </h2>
+
+      <ul>
+        <li><b>Sig + RDS:</b> Signal strength information will be updated in the background. The station text (RDS) will be synced automatically if data is available. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
+        <li><b>Sig:</b> Signal strength information will be updated in the background. No station text (RDS) will be synced. Audible interference noise may be present depending on the signal strength. This mode works best with an external antenna attached.</li>
+        <li><b>Off:</b> No data will be updated in the background. This mode will produce zero background inteference.</li>
+      </ul>
+
+
+      <h2> Lock </h2>
+
+      <p>
+        Orange FM has a customizable lock feature, disabling keypad input except for your chosen wake keys. You can even have the display turn off, to save additional power on an original Game Boy display. Additionally, you can assign specific update modes for when the lock is on, allowing you more flexibility. For example, you could have "Sig + RDS" as your normal update mode, then switch to "Off" when you lock the system.
+      </p>
+
+
+      <h2> Settings </h2>
+      
+      <img src="/public/settings.png" width = "320" style="image-rendering: pixelated;"/>
+
+      <h3> Controls </h3>
+      <ul>
+        <li><b>Left/Right:</b> Switch page</li>
+        <li><b>Up/Down:</b> Change selection</li>
+        <li><b>A:</b> Change setting (forward)</li>
+        <li><b>B:</b> Change setting (backward)</li>
+        <li><b>Start:</b> Switch to Tuner</li>
+      </ul>
+
+      <h3> Page: General </h3>
+      <ul>
+        <li>
+          <b>CGB Pal:</b> Select between one of eight different color palettes for use in a Game Boy Color. Or create your own with the "custom" option.
+          <ul style="margin-bottom: 1rem">
+            <li><b>Custom:</b> Press select to open the palette editor. Use the <b>DPad</b> to select the current color component, <b>A</b> and <b>B</b> to adjust the selected component, and <b>Select</b> to cycle the three different colors into different positions. By selecting the bottom row, you can either discard with <b>B</b>, or save your palette with <b>A</b>.</li>
+          </ul>
+        </li>
+        <li><b>DMG Pal:</b> Select between a dark or light theme for use on Game Boy and Game Boy Pocket.</li>
+        <li><b>Mute:</b> Pick between a truly silient mute or a quiet mute, where the volume is reduced significantly.</li>
+        <li><b>Lock:</b> Choose whether the display is turned off when the system is locked. This is only really useful on non-modified systems, as aftermarket screen kits are unlikely to actually turn off the screen.</li>
+        <li><b>Unlock:</b> Select which key(s) exit lock mode.</li>
+        <li><b>LED:</b> Choose what you want the cart's LED to do. </li>
+        <li><b>Auto Amp:</b> When this option is on, the headphone amp will turn on automatically when you insert something into the cart's 3.5mm jack.</li>
+      </ul>
+
+      <h3> Page: Radio </h3>
+      <ul>
+        <li><b>Gain:</b> Select between different gain levels, which will affect how loud the output is. Depending on the loudness of the broadcasted audio signal, higher gain settings may produce some distortion. This can be a useful setting to get a little more volume from the Game Boy's speaker.
+        There is also an "Analogue" mode designed for the Analogue Pocket, which requires much less output.</li>
+        <li><b>Hi-Cut:</b> Roll off some high frequency content with a high-pass filter. This can be used to warm up the audio.</li>
+        <li><b>Range:</b> Select the frequency range of the tuner. Most countries use 87.5 - 108. Japan uses 76 - 95. You can also select the full tuning range of 64 - 108 if desired.</li>
+        <li><b>Spacing:</b> Choose between <b>200 khz</b> (odd only) or <b>100 khz</b> (odd and even) station spacing for the 87.5 - 108 frequency range. USA uses 200 khz spacing (ex allowing 99.1, 99.3, but not 99.2), while many other countries will use 100 khz spacing to allow for both odd and even frequencies.</li>
+        <li><b>De-Emph:</b> Change the de-emphasis setting. Different countries use either <b>75us</b> or <b>50us</b>. This will affect the high frequency content of the signal, as well as the reception strength (by a minor amount). The North America and Japan use 75us, while Europe and much of the rest of the world use 50us. </li>
+        <li><b>Seek:</b> Adjust the sensitivity of the seek function. <b>High</b> sensitivity will result in more stations being picked up, and <b>Low</b> vice-versa etc.</li>
+      </ul>
+
+      <h3> Page: Data Sync </h3>
+      <ul>
+        <li><b>Manual:</b> Pick the update mode used when you press and hold B on the tuner screen. Typically you'll want this set to <b>Sig+RDS</b>.</li>
+        <li><b>Int. Ant:</b> Pick the update mode for the internal antenna, when not locked. See Update Modes section futher up.</li>
+        <li><b>Int. Lock:</b> Pick the update mode for the internal antenna, when the lock is engaged. See Update Modes section futher up.</li>
+        <li><b>Ext. Ant:</b> Pick the update mode for the external antenna, when not locked mode. See Update Modes section futher up.</li>
+        <li><b>Ext. Lock:</b> Pick the update mode for the external antenna, when the lock is engaged. See Update Modes section futher up.</li>
+      </ul>
+
+
+      <h3> Page: Controls </h3>
+      <p>
+        A quick controls reference.
+      </p>
+
+      <h3> Page: Reset Mem </h3>
+      <p>
+        Press <b>A + B</b> to perform a full reset of the cart. This will clear your presets, and set all settings back to their defaults.
+      </p>
+
+      <h2> Attributions </h2>
+      <ul>
+        <li>
+          Cushion font by Damien Guard (Free with credit)<br/>
+          <a href="https://damieng.com/typography/zx-origins/cushion/">https://damieng.com/typography/zx-origins/cushion/</a>
+        </li>
+        <li>
+          RDSDecoder Arduino library by Radu - Eosif Mihailescu (LGPL v3)<br/>
+          <a href="https://github.com/csdexter/RDSDecoder">https://github.com/csdexter/RDSDecoder</a>
+        </li>
+        <li>
+          Smooth Arduino library by ripred (MIT) <br/>
+          <a href="https://github.com/ripred/Smooth">https://github.com/ripred/Smooth</a>
+        </li>
+        <li>
+          kicad-gamepaks by djeddit (CC-BY-4.0) <br/>
+          <a href="https://github.com/djedditt/kicad-gamepaks">https://github.com/djedditt/kicad-gamepaks</a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
