@@ -4,9 +4,11 @@ Orange FM ROM v1.3 Changelog
 
 - New: Horizontal screen orientation option
   - Setting added on "General" tab of settings
+  - This feature is supported on Color systems only
 - New: Ordered preset navigation option
   - Left/right dpad will optionally change presets by frequency instead of preset number
   - Setting added on "Radio" tab of settings
 - Changed: Manual station tuning shows preset locations
 - Changed: To remove a preset, you now hold SELECT for 1.5 seconds
+- Changed: DMG Pal setting is not available on CGB, and vice versa
 - Bugs: Some minor optimizations and bugfixes were made
