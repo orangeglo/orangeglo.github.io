@@ -1,0 +1,12 @@
+Orange FM ROM v1.4 Changelog
+
+- New: Super Game Boy border
+  - Dither color gradient matched to your current theme
+- New: Super Game Boy will use GBC color palettes
+- New: Game Boy model detected by the cart is shown on bootup, and on the About page in settings
+  - `A` for Game Boy Advance 
+  - `C` for Game Boy Color
+  - `S` for Super Game Boy
+  - `M` for Game Boy Pocket
+  - `D` for Original Game Boy
+- Changed: "CGB Pal" and "DMG Pal" settings have been combined into one "Theme" setting
