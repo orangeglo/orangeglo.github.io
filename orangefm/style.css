@@ -60,3 +60,7 @@ nav .selected {
   width: 100%;
   max-width: 800px;
 }
+
+.bottom-padded-list li {
+  margin-bottom: 2rem;
+}
